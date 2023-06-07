@@ -1,2 +1,5 @@
 # employee_org_chart
-employee organization chart renderer.
+steps to run employee organization chart renderer.
+
+step1: cd employee_management_application .
+step2: npm start .
