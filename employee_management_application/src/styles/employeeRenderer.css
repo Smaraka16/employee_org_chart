@@ -1,0 +1,78 @@
+/* Employee Render Styles */
+
+.employee_el_block {
+  background-color: rgb(0, 30, 60);
+  height: 100vh;
+  overflow: auto;
+}
+
+.employee_li_item {
+  color: rgb(245, 245, 244);
+  font-family: "Courier New", Courier, monospace;
+  cursor: pointer;
+  font-weight: 600;
+  padding: 20px;
+  font-size: 20px;
+  list-style-type: none;
+}
+
+.employee_li_toggler {
+  background-color: #001e5a;
+}
+
+.employee_li_toggler li {
+  color: rgb(245, 245, 244);
+}
+
+.employee_name_item {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.expand_toggler {
+  color: #fff;
+}
+
+.employee_name_item:hover {
+  width: 100%;
+  background-color: #001e5a;
+  cursor: pointer;
+  color: rgb(245, 245, 244);
+}
+
+.employee_name_item:hover li {
+  width: 100%;
+  background-color: #001e5a;
+  cursor: pointer;
+  color: rgb(245, 245, 244);
+}
+
+.highlighted {
+  width: 100%;
+  background-color: #001e5a;
+  cursor: pointer;
+  color: rgb(245, 245, 244);
+}
+
+.highlighted li {
+  width: 100%;
+  background-color: #001e5a;
+  cursor: pointer;
+  color: rgb(245, 245, 244);
+}
+
+.employee_li_render {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+  padding: 10px;
+}
+.employee_li_icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}

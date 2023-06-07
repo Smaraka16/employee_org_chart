@@ -1,0 +1,15 @@
+/* Hirerarchy Styles */
+
+.employee_header_label {
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  font-family: "Courier New", Courier, monospace;
+  text-decoration: underline;
+  color: #fff;
+}
+
+.employee_orgchart_render {
+  display: block;
+  margin: 50px auto;
+}

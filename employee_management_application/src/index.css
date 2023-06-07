@@ -1,0 +1,85 @@
+/* initial scales */
+*{  
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* modifying defult view of orgChart library */
+.orgchart-container {
+    box-sizing: border-box;
+    position: relative;
+    margin-top: 50px !important;
+    height: 700px;
+    width: auto !important;
+    background-color: transparent!important;
+    border: none !important;
+    overflow: auto;
+    text-align: center;
+}
+.orgchart {
+    box-sizing: border-box;
+    display: inline-block;
+    background-image: none !important;
+    background-size: 10px 10px;
+    border: none !important;
+}
+.orgchart ul li .oc-node {
+    box-sizing: border-box;
+    display: inline-block;
+    position: relative;
+    padding: 10px !important;
+    border: 2px dashed transparent;
+    margin-bottom: 20px;
+}
+.orgchart > ul > li > ul li::before  {
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid rgba(32, 20, 207, 0.8) !important;
+    box-sizing: border-box;
+}
+ 
+.orgchart ul li .oc-node .oc-heading {
+    box-sizing: border-box;
+    padding: 15px !important;
+    margin: 0;
+    width: 130px;
+    height: 20px;
+    text-align: center;
+    font-size: 0.95rem !important;
+    font-weight: bold;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background-color: rgba(32, 20, 207, 0.8) !important;
+    color: #fff;
+    border-radius: 4px 4px 0 0;
+}
+.oc-content{
+    padding: 15px !important;
+    font-size: 10px !important;
+    font-weight: 800 !important;
+    width: fit-content;
+}
+.orgchart ul li .oc-node:not(:only-child)::after {
+    content: "";
+    position: absolute;
+    bottom: -11px;
+    left: calc(50% - 1px);
+    width: 2px;
+    height: 9px;
+    background-color: rgba(32, 20, 207, 0.8) !important;
+}
+
+.orgchart > ul > li > ul li > .oc-node::before {
+    content: "";
+    position: absolute;
+    top: -11px;
+    left: calc(50% - 1px);
+    width: 2px;
+    height: 9px;
+    background-color: rgba(32, 20, 207, 0.8) !important;
+}
